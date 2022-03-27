@@ -222,7 +222,7 @@ header .navbar .navbar-nav .nav-link {
 }
 
 .navbar-light .navbar-toggler {
-    border-color: rgb(255 255 255 / 10%);
+    border-color: rgb(255 255 255);
 }
 
 .carousel-indicators li.active {
