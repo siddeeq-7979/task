@@ -222,7 +222,7 @@ header .navbar .navbar-nav .nav-link {
 }
 
 .navbar-light .navbar-toggler {
-    border-color: rgb(255 255 255);
+    border-color: rgb(255 255 255 / 10%);
 }
 
 .carousel-indicators li.active {
@@ -320,7 +320,7 @@ header .navbar .navbar-nav .nav-link {
     background: url(../img/ielts.png);
     text-align: left;
     visibility: hidden;
-    
+
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     transition: all .5s;
@@ -380,8 +380,56 @@ header .navbar .navbar-nav .nav-link {
     color: #fff;
 }
 
+.countries-area {
+    background: url(../img/countries-bg.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
 
-
+.countries-area .contry-box {
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 17px rgba(0, 0, 0, 0.24);
+    border-radius: 7px;
+    margin-top: 30px;
+}
+.countries-area .contry-box .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0 20px 20px;
+    width: -webkit-fill-available;
+}
+.countries-area .contry-box .content h5 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.countries-area .contry-box .content a {
+    color: #000;
+}
+.countries-area .view-all-servixe-box {
+    padding: 20px;
+    background: url(../img/view-allservice-bg.png) #f00;
+    margin-top: 30px;
+    border-radius: 7px;
+    height: 137px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: multiply;
+}
+.countries-area .view-all-servixe-box a {
+    color: #fff;
+}
+.countries-area .view-all-servixe-box h5 {
+    font-weight: 600;
+    font-size: 25px;
+    color: #fff;
+    margin-top: 15px;
+}
 
 
 
@@ -434,6 +482,9 @@ header .navbar .navbar-nav .nav-link {
 }
 
 @media (max-width: 991.98px) {
+    .countries-area {
+        background-size: contain;
+    }
     .circle-line-area img {
         object-fit: contain;
         width: 58%;
