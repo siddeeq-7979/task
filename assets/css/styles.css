@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;600;700&display=swap');
 
 /**fonts**/
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Blinker', sans-serif;
     font-size: 16px;
@@ -431,7 +434,30 @@ header .navbar .navbar-nav .nav-link {
     margin-top: 15px;
 }
 
-
+#scroll {
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background: #40E0D0;
+    display:none;
+    text-decoration: none;
+}
+#scroll i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: rgba(0, 70, 63, 1);
+    text-decoration: none;
+}
+#scroll:hover {
+    background-color:#000;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
 
 
 
